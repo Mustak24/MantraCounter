@@ -1,4 +1,4 @@
-import { Image, Text, TextInput, View } from "react-native";
+import { Image, Text, TextInput, Vibration, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import ProgressBar from "../Components/ProgressBar";
 import AnimateButton from "../Components/AnimateButton";
@@ -30,7 +30,12 @@ export default function HomeScreen() {
     }
 
     useEffect(() => {
-        if(count === target) setCenterModalVisible(true);
+        if(count !== target) return;
+            
+        setCenterModalVisible(true);
+
+        Vibration.cancel()
+        Vibration.vibrate(1500)
     }, [count, target])
 
     useEffect(() => {
