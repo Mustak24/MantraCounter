@@ -1,14 +1,62 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🚀 MantraCounter
 
-# Getting Started
+A [**React Native**](https://reactnative.dev) app for counting mantras, built with TypeScript.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 📦 Repository Overview
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- **Primary Language:** TypeScript
+- **Most Changed Files:**  
+    - `App.tsx`  
+    - `package-lock.json`  
+    - `package.json`  
+    - `src/Assets/Icons/target-icon.png`  
+    - `src/Components/AnimateButton.tsx`  
+    - `src/Components/BottomModal.tsx`  
+    - `src/Components/CenterModal.tsx`  
+    - `src/Components/ProgressBar.tsx`  
+    - `src/Components/ScaleAnimation.tsx`  
+    - `src/Screens/Home.tsx`
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
+
+## 📁 File Structure
+
+<details>
+<summary>Expand to view</summary>
+
+```
+.bundle/
+.eslintrc.js
+.gitignore
+.prettierrc.js
+.watchmanconfig
+App.tsx
+Gemfile
+README.md
+__tests__/
+android/
+app.json
+babel.config.js
+index.js
+ios/
+jest.config.js
+metro.config.js
+package-lock.json
+package.json
+src/
+tsconfig.json
+```
+</details>
+
+---
+
+## 🛠️ Getting Started
+
+> **Note:** Complete the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+
+### 1. Start Metro
 
 ```sh
 # Using npm
@@ -18,80 +66,62 @@ npm start
 yarn start
 ```
 
-## Step 2: Build and run your app
+### 2. Build and Run Your App
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
+#### Android
 
 ```sh
-# Using npm
 npm run android
-
-# OR using Yarn
+# OR
 yarn android
 ```
 
-### iOS
+#### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+Install CocoaPods dependencies (first clone or after updating native deps):
 
 ```sh
 bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
 bundle exec pod install
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+Run the app:
 
 ```sh
-# Using npm
 npm run ios
-
-# OR using Yarn
+# OR
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## ✏️ Modify Your App
 
-## Step 3: Modify your app
+Edit `App.tsx` and save to see changes instantly (powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh)).
 
-Now that you have successfully run the app, let's make changes!
+**Reload shortcuts:**
+- **Android:** Press <kbd>R</kbd> twice or use **Dev Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> / <kbd>Cmd ⌘</kbd> + <kbd>M</kbd>)
+- **iOS:** Press <kbd>R</kbd> in Simulator
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## 🎉 Congratulations!
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+You've successfully run and modified your React Native app! :tada:
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## 📚 Learn More
 
-### Now what?
+- [React Native Docs](https://reactnative.dev/docs/getting-started)
+- [Integration Guide](https://reactnative.dev/docs/integration-with-existing-apps)
+- [Troubleshooting](https://reactnative.dev/docs/troubleshooting)
+- [React Native Blog](https://reactnative.dev/blog)
+- [GitHub Repo](https://github.com/facebook/react-native)
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+## 💡 Contribution
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Feel free to open issues or pull requests to improve MantraCounter!
 
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
